@@ -1,4 +1,4 @@
-package com.liyzzz.upupleetcode;
+package com.liyzzz.leetcode;
 
 /**
  * 描述
