@@ -6,7 +6,7 @@ package com.liyzzz.leetcode;
  * @author Analyze
  * @version 1.0
  * @date 2022/03/29 20:50:42
- * @description 5 爆破 时间复杂度o(n^3)
+ * @description 5 最长回文子串 爆破 时间复杂度o(n^3)
  */
 public class Day_220330_5 {
 
