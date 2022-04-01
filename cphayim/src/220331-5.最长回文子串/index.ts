@@ -8,9 +8,9 @@ function longestPalindrome(str: string): string {
   if (str.length <= 1) return str
 
   let longest: string = ''
-  for (let i = 0; i < str.length - 1; i++) {
+  for (let i = 0; i < str.length; i++) {
     for (let j = str.length; j > i; j--) {
-      if (isPalindrome(str, i, j) && j - i > longest.length) {
+      if (isPalindrome(str, i, j - 1) && j - i > longest.length) {
         longest = str.slice(i, j)
       }
     }
