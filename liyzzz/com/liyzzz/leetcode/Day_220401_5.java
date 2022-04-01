@@ -71,11 +71,12 @@ public class Day_220401_5 {
                     //如果是小于三个字符的子串 这个时候一定是回文串
                     //如果是大于三个字符就需要判断 dp[i-1][j+1] 是否为回文串
                     if (i - j < 3 || dp[i - 1][j + 1]) {
-                        if(max<i - j + 1){
-                            max = i - j + 1;
-                            start = j;
-                        }
                         dp[i][j] = true;
+                        if (max > i - j + 1) {
+                            continue;
+                        }
+                        max = i - j + 1;
+                        start = j;
                     }
                 }
             }
