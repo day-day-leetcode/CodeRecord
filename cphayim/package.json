@@ -1,0 +1,21 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "author": "",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@ombro/ts-config": "^1.4.0",
+    "esno": "^0.14.1",
+    "typescript": "^4.6.3",
+    "vitest": "^0.8.1"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.23"
+  }
+}
