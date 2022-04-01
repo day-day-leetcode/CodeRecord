@@ -26,9 +26,6 @@
 https://leetcode-cn.com/problems/longest-palindromic-substring/
  (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 
-明日算法题(与昨日相同):
-https://leetcode-cn.com/problems/longest-palindromic-substring/
-(强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 ## CommitRule
 ```
 1. 在CodeRecord中创建自己名字的目录——以后每天的刷题都提交到该目录
