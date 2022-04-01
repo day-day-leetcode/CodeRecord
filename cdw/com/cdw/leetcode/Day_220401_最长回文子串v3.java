@@ -8,7 +8,7 @@ package com.cdw.leetcode;
  * @date 2022/03/31 19:50:40
  * @description 5
  */
-public class Day_220331_5 {
+public class Day_220401_最长回文子串v3 {
 
     public static void main(String[] args) {
         String s = "eabcb";
@@ -16,6 +16,12 @@ public class Day_220331_5 {
         System.out.println(longestPalindrome(s));
     }
 
+    /**
+     * 暴力解 o(n^3)
+     *
+     * @param s
+     * @return
+     */
     public static String longestPalindrome(String s) {
         if (null == s || "".equals(s)) {
             return "";
@@ -41,6 +47,7 @@ public class Day_220331_5 {
             left++;
             right--;
         }
+        // left >= right表示跳出while循环是因为两个指针相遇过
         return left >= right;
     }
 
