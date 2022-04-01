@@ -6,7 +6,7 @@ package com.liyzzz.leetcode;
  * @author Analyze
  * @version 1.0
  * @date 2022/03/31 20:06:23
- * @description 5 最长回文子串 中心点枚举
+ * @description 5 最长回文子串 中心点枚举 时间复杂度 o(n^2)
  */
 public class Day_220331_5 {
 
@@ -38,8 +38,8 @@ public class Day_220331_5 {
      * 向两边找寻最大的回文串
      *
      * @param s     总长度
-     * @param start 开始位置
-     * @param end   结束位置
+     * @param start 开始位置 包含该位置字符
+     * @param end   结束位置 包含该位置字符
      * @return 最大的回文串
      */
     private static String getMaxPalindrome(String s, int start, int end) {
