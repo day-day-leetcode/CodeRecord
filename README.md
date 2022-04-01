@@ -26,6 +26,9 @@
 https://leetcode-cn.com/problems/longest-palindromic-substring/
  (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 
+明日算法题(暴力 或者 Robin-karp算法)
+https://leetcode-cn.com/problems/implement-strstr/
+
 ## CommitRule
 ```
 1. 在CodeRecord中创建自己名字的目录——以后每天的刷题都提交到该目录
@@ -37,6 +40,7 @@ https://leetcode-cn.com/problems/longest-palindromic-substring/
 ## ExerciseLog
 ### 2022年
 #### 四月
+02号: [LeetCode 28题](https://leetcode-cn.com/problems/implement-strstr/)
 01号：[LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 第三天 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 #### 三月
 31号: [LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 第二天 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
