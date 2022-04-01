@@ -37,11 +37,11 @@ https://leetcode-cn.com/problems/longest-palindromic-substring/
 ## ExerciseLog
 ### 2022年
 #### 四月
-01号：[LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
+01号：[LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 第三天 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 #### 三月
-31号: [LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
+31号: [LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 第二天 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 
-30号: [LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
+30号: [LeetCode 5题](https://leetcode-cn.com/problems/longest-palindromic-substring/) 三种算法 共三天实现 第一天 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 
 29号：[LeetCode 409题](https://leetcode-cn.com/problems/longest-palindrome)
 
