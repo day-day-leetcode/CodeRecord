@@ -1,27 +1,16 @@
 package com.cdw.leetcode;
 
 /**
- * 描述
- *
- * @author cdw
- * @version 1.0
- * @date 2022/03/31 19:50:40
- * @description 5
+ * 暴力破解
+ * Created by chendongwen on 2022/4/1
  */
-public class Day_220331_最长回文子串v1 {
-
+public class Day_220330_最长回文子串v1 {
     public static void main(String[] args) {
         String s = "eabcb";
         //eabcb
         System.out.println(longestPalindrome(s));
     }
 
-    /**
-     * 暴力解 o(n^3)
-     *
-     * @param s
-     * @return
-     */
     public static String longestPalindrome(String s) {
         if (null == s || "".equals(s)) {
             return "";

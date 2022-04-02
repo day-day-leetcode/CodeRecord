@@ -1,54 +1,50 @@
 package com.cdw.leetcode;
 
 /**
- * 描述
- *
- * @author cdw
- * @version 1.0
- * @date 2022/03/31 19:50:40
- * @description 5
+ * 动态规划解法
+ * Created by chendongwen on 2022/4/01
  */
 public class Day_220401_最长回文子串v3 {
 
     public static void main(String[] args) {
-        String s = "eabcb";
+        String s = "ac";
         //eabcb
         System.out.println(longestPalindrome(s));
     }
 
-    /**
-     * 暴力解 o(n^3)
-     *
-     * @param s
-     * @return
-     */
     public static String longestPalindrome(String s) {
         if (null == s || "".equals(s)) {
             return "";
         }
-        if (s.length() == 1) {
+        int length = s.length();
+        if (length == 1) {
             return s;
         }
-        char[] chars = s.toCharArray();
-        int length = chars.length;
-        for (int i = length; i > 0; i--) {
-            for (int start = 0; start + i <= length; start++) {
-                if (isPalindrome(chars, start, start + i - 1)) {
-                    return s.substring(start, start + i);
+        boolean[][] min = new boolean[length][length];
+        String longestStr = s.substring(0, 1);
+        for (int right = 1; right < length; right++) {
+            // 单个字符必定是回文串
+            min[right][right] = true;
+            for (int left = 0; left < right; left++) {
+                if (s.charAt(left) != s.charAt(right)) {
+                    min[left][right] = false;
+                    continue;
+                }
+                // aa bb这种情况
+                if (left + 1 > right - 1) {
+                    min[left][right] = true;
+                } else {
+                    //如果字串也是回文串，那么当前串也是回文串
+                    min[left][right] = min[left + 1][right - 1];
+                }
+                //当前串是回文串，并且大于当前最大的回文串长度
+                if (min[left][right] && right - left + 1 > longestStr.length()) {
+                    longestStr = s.substring(left, right + 1);
                 }
             }
         }
-
-        return "";
+        return longestStr;
     }
 
-    private static boolean isPalindrome(char[] input, int left, int right) {
-        while (left < right && input[left] == input[right]) {
-            left++;
-            right--;
-        }
-        // left >= right表示跳出while循环是因为两个指针相遇过
-        return left >= right;
-    }
 
 }

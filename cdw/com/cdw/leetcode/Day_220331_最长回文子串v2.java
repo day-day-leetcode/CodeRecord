@@ -1,20 +1,16 @@
 package com.cdw.leetcode;
 
 /**
- * Created by chendongwen on 2022/4/1
+ * 基于中心对称枚举解法
+ * Created by chendongwen on 2022/3/31
  */
-public class Day_220330_最长回文子串v2 {
+public class Day_220331_最长回文子串v2 {
+
 
     public static void main(String[] args) {
         System.out.println(longestPalindromeV1("eabcb"));
     }
 
-    /**
-     * 背向双指针
-     *
-     * @param s
-     * @return
-     */
     public static String longestPalindromeV1(String s) {
         if (null == s || "".equals(s)) {
             return "";
