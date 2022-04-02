@@ -22,11 +22,7 @@
 昨日算法题：https://leetcode-cn.com/problems/longest-palindromic-substring/
 (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
 
-今日算法题(与昨日相同)：
-https://leetcode-cn.com/problems/longest-palindromic-substring/
- (强烈建议将爆破 中心线 动态规划 三种算法都实现一遍)
-
-明日算法题(暴力 或者 Robin-karp算法)
+今日算法题(暴力 或者 Robin-karp算法)
 https://leetcode-cn.com/problems/implement-strstr/
 
 ## CommitRule
