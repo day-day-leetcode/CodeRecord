@@ -11,8 +11,11 @@ public class Day_220402_实现strStrv1 {
     }
 
     public static int strStr(String haystack, String needle) {
-        if (null == haystack || haystack.length() == 0 || null == needle || needle.length() == 0) {
+        if (null == haystack || haystack.length() == 0 || null == needle) {
             return -1;
+        }
+        if (0 == needle.length()) {
+            return 0;
         }
         for (int i = 0; i < haystack.length(); i++) {
             String temp;
