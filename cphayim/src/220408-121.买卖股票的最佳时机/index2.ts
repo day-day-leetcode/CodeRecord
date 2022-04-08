@@ -14,7 +14,7 @@ function maxProfit(prices: number[]): number {
   // dp[i] 表示当日卖出的最大利润
   // 如果当日卖出导致亏损了（利润为负），则当做之前没有买入（0）
   // 当日卖出的最大利润 = max( 昨日卖出的最大利润 + 利润差 , 0 )
-  // 状态转移方程：dp[i] = max(dp[i-i] + prices[j] - prices[j-1], 0)
+  // 状态转移方程：dp[i] = max(dp[i-1] + prices[i] - prices[i-1], 0)
   const dp: number[] = []
   dp[0] = 0 // 第一天不存在卖出
 
