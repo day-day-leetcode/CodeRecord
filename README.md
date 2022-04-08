@@ -20,13 +20,9 @@
 [算算学习乐园](https://suansuan.tech/blog/1_32%E4%B8%AAJava%E9%9D%A2%E8%AF%95%E5%BF%85%E8%80%83%E7%82%B9/1-%E5%BC%80%E7%AF%87%EF%BC%9A%E5%BB%BA%E7%AB%8B%E5%B9%B4%E8%96%AA50%E4%B8%87%E7%9A%84%E8%83%BD%E5%8A%9B%E6%A1%86%E6%9E%B6/)
 
 ## RecentGoals
+08号: [leetcode 912题](https://leetcode-cn.com/problems/sort-an-array/) 快速排序
 
-今日算法题(双指针算法)
-https://leetcode-cn.com/problems/valid-palindrome/
-https://leetcode-cn.com/problems/valid-palindrome-ii/
-
-明日算法题
-https://leetcode-cn.com/problems/two-sum/
+09号: [leetcode 912题](https://leetcode-cn.com/problems/sort-an-array/) 归并排序
 
 ## CommitRule
 
@@ -43,6 +39,9 @@ https://leetcode-cn.com/problems/two-sum/
 ### 2022年
 
 #### 四月
+09号: [leetcode 912题](https://leetcode-cn.com/problems/sort-an-array/) 归并排序
+
+08号: [leetcode 912题](https://leetcode-cn.com/problems/sort-an-array/) 快速排序
 
 07号: [leetcode 1题](https://leetcode-cn.com/problems/two-sum/)
 
