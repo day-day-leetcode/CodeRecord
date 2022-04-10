@@ -16,6 +16,11 @@ function sortArray(nums: number[]): number[] {
 function quickSort(arr: number[], l = 0, r = arr.length - 1): void {
   if (l >= r) return
 
+  //? 优化点：对小范围使用插入排序优化
+  //? 参考 v8 对 Array.prototype.sort 的优化
+  //? https://github.com/v8/v8/blob/ad82a40509c5b5b4680d4299c8f08d6c6d31af3c/src/js/array.js#L763
+  if (r - l <= 10) return insertionSort(arr, l, r)
+
   const [p1, p2] = partition(arr, l, r)
   quickSort(arr, l, p1)
   quickSort(arr, p2, r)
@@ -83,4 +88,21 @@ function partition(arr: number[], l: number, r: number): [number, number] {
 
 function swap(arr: number[], l: number, r: number): void {
   ;[arr[l], arr[r]] = [arr[r], arr[l]]
+}
+
+// 插入排序可以提前终止内层循环
+// 因此在对近乎有序的数组进行排序时，时间复杂度接近 O(n)
+function insertionSort(arr: number[], l: number, r: number) {
+  // 从 l+1 开始将每个元素向前插入到合适的位置
+  for (let i = l + 1; i <= r; i++) {
+    let e = arr[i] // 寻找 e 合适的插入位置
+    let j: number
+
+    // 当 arr[j-1] <= e 退出循环
+    for (j = i; j > l && arr[j - 1] > e; j--) {
+      arr[j] = arr[j - 1] // 将元素后移
+    }
+    // 此时 j 的位置就是 e 需要插入的位置
+    arr[j] = e
+  }
 }
