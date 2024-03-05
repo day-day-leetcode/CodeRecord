@@ -58,14 +58,43 @@ public class Day_240229_121 {
 //        return income;
 //    }
 
+//    public int maxProfit(int[] prices) {
+//        //爆破2  找出数据中最大的差值 此外，第二个数字（卖出价格）必须大于第一个数字（买入价格） 超时
+//        int max=0;
+//        for (int i = 0; i < prices.length-1 ; i++) {
+//            for (int j = i+1; j < prices.length; j++) {
+//                if(prices[j]-prices[i]>max){
+//                    max=prices[j]-prices[i];
+//                }
+//            }
+//        }
+//        return max;
+//    }
+//    public int maxProfit(int[] prices) {
+//        //动态规划
+//        //dp[i][0/1] 表示第i天持有/不持有股票的最大收益 0表示持有0只股票 1表示持有1只股票
+//        int[][] dp = new int[prices.length][2];
+//        //初始化值
+//        dp[0][0] = 0;
+//        dp[0][1] = -prices[0];
+//        //
+//        for (int i = 1; i < prices.length; i++) {
+//            dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i]);
+//            dp[i][1] = Math.max(dp[i - 1][1], - prices[i]);
+//        }
+//        return dp[prices.length - 1][0];
+//    }
     public int maxProfit(int[] prices) {
-        //爆破2  找出数据中最大的差值 此外，第二个数字（卖出价格）必须大于第一个数字（买入价格）
-        int max=0;
-        for (int i = 0; i < prices.length-1 ; i++) {
-            for (int j = i+1; j < prices.length; j++) {
-                if(prices[j]-prices[i]>max){
-                    max=prices[j]-prices[i];
-                }
+        //动态规划
+        int max = 0;
+        //第i天卖出的最大利润只和 prices[0]-prices[i]的最小值有关系
+        int minPrice = prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            //计算当天卖出利润
+            int dayPrices = prices[i] - minPrice;
+            max = Math.max(max, dayPrices);
+            if (prices[i] < minPrice) {
+                minPrice = prices[i];
             }
         }
         return max;
